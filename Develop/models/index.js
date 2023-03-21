@@ -15,15 +15,17 @@ Category.hasMany(Product, {
   onDelete: 'CASCADE'
 })
 
-/*Product.belongsToMany(ProductTag, {
+Product.belongsToMany(Tag, {
+  through: ProductTag,
   foreignKey: 'product_id',
   onDelete: 'CASCADE'
 })
 
-Tag.belongsToMany(ProductTag, {
+Tag.belongsToMany(Product, {
+  through: ProductTag,
   foreignKey: 'tag_id',
   onDelete: 'CASCADE'
-})*/
+})
 // Categories have many Products
 
 // Products belongToMany Tags (through ProductTag)
