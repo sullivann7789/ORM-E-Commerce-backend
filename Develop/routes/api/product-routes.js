@@ -138,8 +138,20 @@ router.put('/:id', (req, res) => {
     });
 });
 
-router.delete('/:id', (req, res) => {
-  // delete one product by its `id` value
+router.delete('/:id', async (req, res) => {
+  try {
+    const PRO_ID = await Product.destroy({
+      where: {
+      id: req.params.id,
+     /* product_name: req.body.product_name,
+      price: req.body.price,
+      stock: req.body.stock*/
+      },
+    });
+    res.status(200).json(`Product has been deleted: ${PRO_ID}`);
+  } catch (err) {
+    res.status(400).json(err);
+  }
+  // delete a category by its `id` value
 });
-
 module.exports = router;
