@@ -42,8 +42,8 @@ try {
 router.post('/', async (req, res) => {
   try {
     const newTag = await Tag.create({
-      id: req.params.id,
-      tag_name: req.params.tag_name
+      id: req.body.id,
+      tag_name: req.body.tag_name
     });
     res.status(200).json(newTag);
   } catch(err){
@@ -69,12 +69,16 @@ router.put('/:id', async (req, res) => {
 
 router.delete('/:id', async (req, res) => {
   // delete on tag by its `id` value
+  try {
   const TAG_byID = await Tag.destroy( {
     where: {
       id: req.params.id,
     }
   });
   res.status(200).json(`Product has been deleted: ${TAG_byID}`);
+} catch (err) {
+  res.status(500).json(err);
+}
 
 });
 
