@@ -1,7 +1,9 @@
 
 # ORM E-Commerce Backend For Businesses needs with Online Database Solutions
+![365ADCEA-345C-465E-87F4-4A795C2D5CE7](https://user-images.githubusercontent.com/119015927/227430844-9b320595-0362-495a-8e9b-2bfbbad1067a.jpeg)
 
 # Table of Contents
+
 1. [Description](#description)
 2. [Installation](#installation)
 3. [Usage](#usage)
@@ -9,15 +11,17 @@
 5. [Tests](#tests)
 6. [License](#license)
 7. [Questions](#questions)
-
+## VIDEO LINK: https://www.youtube.com/watch?v=yiJB4Iu01r8
 ## Description:
 - This project was created to fit the needs of clientele who have a professional application to computer-based databases, such as keeping stock of inventory or marking customers who have memberships, owe bills, etc. This project is run off of Node.js, Express, Sequelize, MySQL2, and more. It runs off of insomnia and similar applications that allow for Get, Put, Post, and Delete requests on a local server such as port 3001
 ### Why This Project Was Made:
-- 
+
         
 ## Installation:
-- Clone the repository into your local device, navigate to the file in your command line interface or terminal. Once you navigate to the cloned repository's folder, run the commands: <br>1:  ```npm i``` <br>2: ```node seeds```<br>3: ```npm start```<br>## Do this only after putting your credentials in the .env folder
-        
+- Clone the repository into your local device, navigate to the file in your command line interface or terminal. Once you navigate to the cloned repository's folder, run the commands: <br>1:  ```npm i``` <br>2: ```node seeds```<br>3: ```npm start```
+## Do this only after putting your credentials in the .env folder
+<img width="519" alt="Screen Shot 2023-03-23 at 10 05 23 PM" src="https://user-images.githubusercontent.com/119015927/227430117-d027533e-83c5-410a-b6f8-f047b9df519d.png">
+
 ## Usage:
 - You can manipulate the database with POST, PUT, and DELETE requests. Furthermore, GET requests will list all the data for each database model and their associated models using hasMany and belongsTo commands in the javascript. 
         
